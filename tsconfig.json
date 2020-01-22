@@ -38,7 +38,7 @@
   },
   "exclude": [
     "node_modules",
-    "babel.config.js"
+    ".babelrc.js"
   ],
   "include": [
     "src"
