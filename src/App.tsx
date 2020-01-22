@@ -1,12 +1,12 @@
 import React from 'react'
 import Landing from 'src/landing/Landing'
-import Provider from 'src/Provider'
+import CustomProvider from 'src/CustomProvider'
 
 const App: React.FC = () => {
   return (
-    <Provider>
+    <CustomProvider>
       <Landing />
-    </Provider>
+    </CustomProvider>
   )
 }
 
