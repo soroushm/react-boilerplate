@@ -26,6 +26,25 @@
 
 .App-link {
   color: #61dafb;
+  display: inline-block;
+}
+
+.button {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  border: 0;
+  font-size: 16px;
+  padding: 4px 8px;
+  margin: 0 8px;
+}
+
+.button-increase {
+  background: rgb(28, 184, 65);
+}
+
+.button-decrease {
+  background: rgb(202, 60, 60);
 }
 
 @keyframes App-logo-spin {
