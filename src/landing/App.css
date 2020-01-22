@@ -46,7 +46,9 @@
 .button-decrease {
   background: rgb(202, 60, 60);
 }
-
+.error {
+  color: red;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

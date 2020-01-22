@@ -6,18 +6,25 @@ import logo from './logo.svg'
 import './App.css'
 const Landing: React.FC = () => {
   const dispatch = useDispatch()
-  const number = useSelector<StoreState>((state) => state.landing.number)
+  const { number, error } = useSelector<StoreState, StoreState['landing']>((state: StoreState) => state.landing)
 
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        {error && <p className="error">{error}</p>}
         <div>
-          <button className="button button-increase" onClick={() => dispatch({ type: actionTypes.INCREASE })}>
+          <button
+            className="button button-increase"
+            onClick={() => dispatch({ type: actionTypes.INCREASE, number: number + 1 })}
+          >
             Increase
           </button>
           {number}
-          <button className="button button-decrease" onClick={() => dispatch({ type: actionTypes.DECREASE })}>
+          <button
+            className="button button-decrease"
+            onClick={() => dispatch({ type: actionTypes.DECREASE, number: number - 1 })}
+          >
             Decrease
           </button>
         </div>

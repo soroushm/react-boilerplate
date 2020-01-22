@@ -3,23 +3,30 @@ import actionTypes from './actionTypes'
 
 interface InterfaceLandingState {
   number: number
+  error: string
 }
 
 const landingState: InterfaceLandingState = {
   number: 0,
+  error: '',
 }
 
-export const landing = (state: InterfaceLandingState = landingState, { type, action }) => {
+export const landing = (
+  state: InterfaceLandingState = landingState,
+  { type, number, error }
+): InterfaceLandingState => {
   switch (type) {
     case actionTypes.INCREASE:
-      return {
-        ...state,
-        number: ++state.number,
-      }
     case actionTypes.DECREASE:
       return {
         ...state,
-        number: --state.number,
+        number,
+        error: '',
+      }
+    case actionTypes.DECREASE_ERROR:
+      return {
+        ...state,
+        error,
       }
     default:
       return state
