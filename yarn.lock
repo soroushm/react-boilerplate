@@ -3461,6 +3461,11 @@ csstype@^2.2.0:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.6.8.tgz#0fb6fc2417ffd2816a418c9336da74d7f07db431"
   integrity sha512-msVS9qTuMT5zwAGCVm4mxfrZ18BNc6Csd0oJAtiFMZ1FAx1CCvy2+5MDmYoix63LM/6NDbNtodCiGYGmFgO0dA==
 
+customize-cra-eslint-ignore@^0.1.2:
+  version "0.1.2"
+  resolved "https://registry.yarnpkg.com/customize-cra-eslint-ignore/-/customize-cra-eslint-ignore-0.1.2.tgz#98328a3e0072b590a4792f849bc56b0989af40bd"
+  integrity sha512-Xc7tjYMcQtxz2D3EtQo7TOdToeYDLCkeVMZq/WkdzlPBGUZSQLN7zdB5OvrZm325SDEt65SVF1CMteqgWMUGTA==
+
 customize-cra@^0.9.1:
   version "0.9.1"
   resolved "https://registry.yarnpkg.com/customize-cra/-/customize-cra-0.9.1.tgz#76b42c4f537c16329eccc09cfefd804d04c81550"

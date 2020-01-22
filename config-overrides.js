@@ -1,4 +1,7 @@
 /* config-overrides.js */
-const { useBabelRc, override, useEslintRc } = require('customize-cra')
+/* eslint-disable */
 
-module.exports = override(useBabelRc(), useEslintRc())
+const { useBabelRc, override, useEslintRc } = require('customize-cra')
+const enableEslintIgnore = require('customize-cra-eslint-ignore')
+
+module.exports = override(useBabelRc(), useEslintRc(), enableEslintIgnore())

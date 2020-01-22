@@ -38,7 +38,8 @@
   },
   "exclude": [
     "node_modules",
-    ".babelrc.js"
+    ".babelrc.js",
+    "./src/serviceWorker.ts"
   ],
   "include": [
     "src"
